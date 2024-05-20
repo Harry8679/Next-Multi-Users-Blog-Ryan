@@ -1,3 +1,4 @@
+import TopNav from "./components/nav/TopNav";
 import { ThemeProvider } from "./context/theme";
 import "./globals.css";
 
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-bs-theme='dark'>
       <body>
+        <TopNav />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
